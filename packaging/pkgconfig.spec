@@ -17,7 +17,7 @@ library, it reads the configuration file and outputs the necessary
 compiler and linker flags.
 
 %prep
-%setup -n pkg-config-%{version} -q
+%setup -n %{name}-%{version} -q
 
 %build
 %configure \
