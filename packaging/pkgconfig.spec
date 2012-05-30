@@ -6,6 +6,7 @@ License: GPLv2+
 URL: http://pkgconfig.freedesktop.org
 Group: Development/Tools
 Source:  http://www.freedesktop.org/software/pkgconfig/releases/pkg-config-%{version}.tar.gz
+Source1001: packaging/pkgconfig.manifest 
 #BuildRequires: glib2-devel
 BuildRequires: popt-devel
 
@@ -20,6 +21,7 @@ compiler and linker flags.
 %setup -n %{name}-%{version} -q
 
 %build
+cp %{SOURCE1001} .
 %configure \
         --disable-shared \
         --with-pc-path=%{_libdir}/pkgconfig:%{_datadir}/pkgconfig
@@ -37,6 +39,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/pkg-config
 
 
 %files
+%manifest pkgconfig.manifest
 %defattr(-,root,root)
 %{_bindir}/*
 %{_libdir}/pkgconfig
