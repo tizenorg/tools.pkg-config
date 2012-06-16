@@ -1,0 +1,23 @@
+* Sat Jun 16 2012 Anas Nashif <anas.nashif@intel.com> 6cd2246
+- Update package name to match upstream
+
+* Wed May 30 2012 Ryan Ware <ryan.r.ware@intel.com> 95195a5
+- Add default Smack manifest for pkgconfig.spec
+
+* Wed May 23 2012 Kevin Wang <kevin.a.wang@intel.com> 712881a
+- Merge "clean tarball setup path to facilitate hudson automation submission"
+
+* Sat May 19 2012 Zhang Qiang <qiang.z.zhang@intel.com> 52df729
+- clean tarball setup path to facilitate hudson automation submission
+
+* Fri May 18 2012 Yang Lin <lin.a.yang@intel.com> f953be4
+- clean tarball setup path to facilitate hudson automation submission
+
+* Sun Apr 29 2012 Kim Kibum <kb0929.kim@samsung.com> 8c303a8
+- upload tizen1.0 source
+
+* Fri Jan 06 2012 Kibum Kim <kb0929.kim@samsung.com> eade8e0
+- Git init
+[ Eunkyoung Kim ]
+- Initial empty repository
+
