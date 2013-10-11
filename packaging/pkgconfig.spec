@@ -29,6 +29,9 @@ make
 make install DESTDIR=$RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_libdir}/pkgconfig
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/pkgconfig
+mkdir -p %{buildroot}/usr/share/license
+cp COPYING %{buildroot}/usr/share/license/%{name}
+
 
 # we include this below, already
 rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/pkg-config
@@ -42,3 +45,4 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/pkg-config
 %{_libdir}/pkgconfig
 %{_datadir}/pkgconfig
 %{_datadir}/aclocal/*
+/usr/share/license/%{name}
